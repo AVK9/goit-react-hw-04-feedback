@@ -12,13 +12,13 @@ export function App() {
   const plusFeedback = e => {
     switch (e) {
       case 'good':
-        setGood(e => good + 1);
+        setGood(s => s + 1);
         break;
       case 'neutral':
-        setNeutral(e => neutral + 1);
+        setNeutral(s => s + 1);
         break;
       case 'bad':
-        setBad(e => bad + 1);
+        setBad(s => s + 1);
         break;
       default:
         return;
