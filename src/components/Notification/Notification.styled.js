@@ -1,21 +1,22 @@
-.p {
+import styled from '@emotion/styled'
+
+export const Paragraf = styled.p`
   text-align: center;
   color: #7a7a7a;
   font-weight: 700;
   font-size: 17px;
-
   background-color: #7a7a7a;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
   text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 1px;
-}
-.box {
+`
+export const Box = styled.div`
   width: 300px;
   background-color: #eeeeee;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 40px;
-}
+`

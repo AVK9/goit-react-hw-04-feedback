@@ -1,15 +1,14 @@
-import css from './FeedbackOptions.module.css'
+import { ButtonBox, Button } from './FeedbackOptions.styled';
 
-export const FeedbackOptions = ({options, onLeaveFeedback}) => (
-    <div className={css.buttonBox}>
-        {
-        options.map((option)=>(
-        <button className={css.Button} onClick={() =>
-            onLeaveFeedback(option)} key={option}>{option}</button>
-))
-        }
-        
-
-    </div>
-)
-
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+  //   console.log(options[0]);
+  return (
+    <ButtonBox>
+      {options.map(option => (
+        <Button onClick={() => onLeaveFeedback(option)} key={option}>
+          {option}
+        </Button>
+      ))}
+    </ButtonBox>
+  );
+};

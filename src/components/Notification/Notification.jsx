@@ -1,7 +1,7 @@
-import css from './Notification.module.css'
+import { Box, Paragraf } from './Notification.styled';
 
 export const Notification = ({ message }) => (
-    <div className={css.box}>
-        <p className={css.p}>{message}</p>
-     </div>
+  <Box>
+    <Paragraf>{message}</Paragraf>
+  </Box>
 );

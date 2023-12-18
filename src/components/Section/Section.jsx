@@ -1,8 +1,8 @@
-import css from './Section.module.css'
+import { Box, Title } from './Section.styled';
 
 export const Section = ({ title, children }) => (
-    <div className={css.box}>
-    <h2 className={css.title}>{title}</h2>
+  <Box>
+    <Title>{title}</Title>
     {children}
-    </div>
-)
+  </Box>
+);
